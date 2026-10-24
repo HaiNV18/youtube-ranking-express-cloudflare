@@ -1,4 +1,4 @@
-name = "youtube-ranking-express"
+name = "youtube-ranking-express-cloudflare"
 pages_build_output_dir = "./dist"
 compatibility_date = "2026-08-04"
 compatibility_flags = ["nodejs_compat"]
