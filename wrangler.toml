@@ -1,7 +1,7 @@
 name = "youtube-ranking-express-cloudflare"
-pages_build_output_dir = "./dist"
-compatibility_date = "2026-08-04"
+main = "app.js"
+compatibility_date = "2026-10-25"
 compatibility_flags = ["nodejs_compat"]
 
 [vars]
-PORT = "4000"
+PORT = "3000"
