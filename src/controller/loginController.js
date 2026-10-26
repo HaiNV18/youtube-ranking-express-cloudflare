@@ -1,4 +1,4 @@
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import {ok} from "../error/ApiResponse.js";
 import { getAccountByUsername } from "../models/accountModel.js";
