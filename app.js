@@ -1,4 +1,3 @@
-import { httpServerHandler } from "cloudflare:node";
 import express from "express";
 
 import cartRoutes from "./src/routes/cartRoutes.js";
@@ -16,7 +15,6 @@ import updateChannelRoutes from "./src/routes/api-youtube/updateChannelRoutes.js
 import { authMiddleware } from "./src/middleware/authMiddleware.js";
 
 const app = express();
-const PORT = process.env.PORT ?? 3000; // lấy PORT=4000, không được thì lấy port 3000
 console.log(process.env.PORT)
 
 // 0. CORS middleware
@@ -75,12 +73,4 @@ app.use("/api/v1", updateChannelRoutes);
 
 
 
-
-
-
-const LISTENING_PORT = 4000;
-app.listen(LISTENING_PORT, () => {
-    console.log(`Server is running on port ${LISTENING_PORT}`);
-});
-
-export default httpServerHandler({ port: LISTENING_PORT });
+export default app;
